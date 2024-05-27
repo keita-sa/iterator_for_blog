@@ -1,3 +1,4 @@
+# decorator with arguments
 def repeat(num_times):
     def decorator_repeat(func):
         def wrapper(*args, **kwargs):
