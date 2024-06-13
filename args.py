@@ -1,13 +1,5 @@
-def repeat(num_times):
-    def decorator_repeat(func):
-        def wrapper(*args, **kwargs):
-            for _ in range(num_times):
-                func(*args, **kwargs)
-        return wrapper
-    return decorator_repeat
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-@repeat(3)
-def say_hello():
-    print('Hello!')
+flat = [i for row in matrix for i in row]
 
-say_hello()
+print(flat)

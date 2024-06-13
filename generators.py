@@ -1,7 +1,4 @@
-def reverse(data):
-    for index in range(len(data)-1, -1, -1):
-        yield data[index]
+data = 'golf'
+s = list(data[i] for i in range(len(data)-1, -1, -1))
 
-rev = reverse('sample')
-for char in rev:
-    print(char)
+print(s)
